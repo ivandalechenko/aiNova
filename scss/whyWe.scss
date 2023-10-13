@@ -1,6 +1,9 @@
 .whyWe{
     margin-top: 100px;
     width: 100%;
+    @media(max-width:550px){
+        margin-top: 60px;
+    }
     &_header{
 		position: relative;
 		z-index: 5;
@@ -10,6 +13,9 @@
         &_text{
             font-size: 96px;
             font-weight: 700;
+            @media(max-width:800px){
+                font-size: 60px;
+            }
         }
         &_decor{
             width: 100%;
@@ -25,6 +31,9 @@
                color: #fff0;
                font-size: 96px;
                font-weight: 700;
+               @media(max-width:800px){
+                   font-size: 60px;
+               }
             }
         }
     }
@@ -37,9 +46,16 @@
             width: 100%;
             row-gap: 50px;
             column-gap: 50px;
+            @media(max-width:900px){
+                row-gap: 15px;
+                column-gap: 15px;
+            }
         }
         &_element{
             width: 40%;
+            @media(max-width:800px){
+                width: 100%;
+            }
             background: rgba(180, 150, 87, 0.15);
             backdrop-filter: blur(9px);
             padding: 20px;

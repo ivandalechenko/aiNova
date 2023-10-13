@@ -3,14 +3,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media(max-width:550px){
+        height:60px;
+    }
     &_logo{
         font-size: 36px;
         font-weight: 700;
+        @media(max-width:550px){
+            font-size: 24px;
+        }
         &_colored{
             display: inline;
             color: $primaryColor;
             font-size: 36px;
             font-weight: 700;
+            @media(max-width:550px){
+                font-size: 24px;
+            }
         }
     }
     &_lang_and_auth{
@@ -21,9 +30,15 @@
     &_lang{
         display: flex;
         column-gap: 8px;
+        @media(max-width:550px){
+            column-gap: 4px;
+        }
         &_element{
             font-size: 18px;
             font-weight: 400;
+            @media(max-width:550px){
+                font-size: 14px;
+            }
             &_selected{
                 font-weight: 700;
                 text-decoration: underline;
@@ -41,5 +56,14 @@
         display: flex;
         align-items: center;
         column-gap: 16px;
+        @media(max-width:550px){
+            column-gap: 14px;
+        padding: 10px 15px;
+        font-size: 14px;
+        column-gap: 8px;
+            img{
+                height:20px;
+            }
+        }
     }
 }

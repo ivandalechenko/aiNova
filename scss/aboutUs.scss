@@ -8,6 +8,9 @@
         &_text{
              font-size: 96px;
              font-weight: 700;
+             @media(max-width:600px){
+                 font-size: 60px;
+             }
          }
          &_decor{
              width: 100%;
@@ -23,6 +26,9 @@
                 color: #fff0;
                 font-size: 96px;
                 font-weight: 700;
+                @media(max-width:600px){
+                    font-size: 60px;
+                }
              }
          }
     }
@@ -30,19 +36,57 @@
      display: flex;
      row-gap: 50px;
      flex-wrap: wrap;
+
     }
     &_element{
          display: flex;
          align-items: center;
          column-gap: 150px;
          width: 100%;
+         &_first{
+            @media(max-width:900px){
+                flex-wrap: wrap;
+                margin-top: 40px;
+                row-gap: 30px;
+                .aboutUs_element_decor{
+                    order: 1;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+                .aboutUs_element_content{
+                    order: 2;
+                    width: 100%;
+                }
+            }
+         }
+         &_second{
+            @media(max-width:900px){
+                flex-wrap: wrap;
+                margin-top: 40px;
+                row-gap: 30px;
+                .aboutUs_element_decor{
+                    order: 1;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+                .aboutUs_element_content{
+                    order: 2;
+                    width: 100%;
+                }
+            }
+         }
          &_content{
              z-index: 3;
              position: relative;
-                 &_header{
+             &_header{
                  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                  font-size: 48px;
                  font-weight: 700;
+                 @media(max-width:600px){
+                     font-size: 32px;
+                 }
                  &_decor{
                      width: 100;
                      max-width: 450px;
@@ -50,7 +94,11 @@
                      height: 24px;
                      border-radius: 39px;
                      margin-top: -20px;
-                 }
+                     @media(max-width:600px){
+                         margin-top: -16px;
+                         height: 18px;
+                    }
+                }
              }
              &_p{
                  font-size: 16px;
@@ -77,6 +125,10 @@
             top: -246px;
             left: 514px;
              z-index: 2;
+            @media(max-width:900px){
+                top: -546px;
+                left: 0px;
+            }
          }
     }
  }
