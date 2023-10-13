@@ -15,26 +15,29 @@
     }
     &_header{
         display: flex;
-        justify-content: center;
         flex-wrap: wrap;
-        
-        font-size: 64px;
-        font-style: normal;
-        font-weight: 700;
+        &_text{
+            width: 100%;
+            text-align: right;
+            font-size: 64px;
+            font-weight: 700;
+        }
         &_decor{
             width: 100%;
             display: flex;
             justify-content: center;
-            .free_img{
-                display: flex;
-                justify-content: center;
-                z-index: -1;
-                left: 10px;
-                top: 2px;
-                img{
-                    width: 877px;
-                    height: 56px;
-                }
+            position: relative;
+            z-index: -1;
+            height:0px;
+            top: -4px;
+            left: 4px;
+            &_inner{
+                width: 100%;
+                text-align: right;
+               -webkit-text-stroke: 2px #B49657;
+               color: #fff0;
+               font-size: 64px;
+               font-weight: 700;
             }
         }
     }

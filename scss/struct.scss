@@ -3,28 +3,31 @@
     margin-top: 120px;
     &_header{
         display: flex;
-        justify-content: center;
         flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
         &_text{
+            width: 100%;
             font-size: 64px;
             font-weight: 700;
-            width: 100%;
             text-align: center;
         }
         &_decor{
+            width: 100%;
             display: flex;
             justify-content: center;
+            position: relative;
+            z-index: -1;
+            height:0px;
+            top: -4px;
+            left: -4px;
+            &_inner{
+            text-align: center;
             width: 100%;
-            .free_img{
-                display: flex;
-                justify-content: center;
-                z-index: -1;
-                top: 10px;
-                left: -7px;
-            }
-            img{
-                width: 399px;
-                height:48px;
+               -webkit-text-stroke: 2px #B49657;
+               color: #fff0;
+               font-size: 64px;
+               font-weight: 700;
             }
         }
         &_line{

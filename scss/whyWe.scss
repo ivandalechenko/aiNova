@@ -8,21 +8,29 @@
         justify-content: center;
         flex-wrap: wrap;
         &_text{
-             font-size: 96px;
-             font-weight: 700;
-         }
-         &_decor{
-             width: 100%;
-             display: flex;
-             justify-content: center;
-             position: relative;
-             z-index: -1;
-             top: -81px;
-             left: -10px;
-         }
+            font-size: 96px;
+            font-weight: 700;
+        }
+        &_decor{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            z-index: -1;
+            height:0px;
+            top: 5px;
+            left: -5px;
+            &_inner{
+               -webkit-text-stroke: 2px #B49657;
+               color: #fff0;
+               font-size: 96px;
+               font-weight: 700;
+            }
+        }
     }
     &_advant{
         &_elements{
+            margin-top: 28px;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;

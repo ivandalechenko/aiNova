@@ -1,5 +1,5 @@
 .businesModel{
-    margin-top: 180px;
+    margin-top: 200px;
     &_content{
         display: flex;
         align-items: center;
@@ -9,6 +9,18 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        &_decor{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            height:0px;
+            position: relative;
+            top: -130px;
+            z-index: -1;
+            img{
+                height:200px;
+            }
+        }
         &_text{
             width: 100%;
             text-align: center;
