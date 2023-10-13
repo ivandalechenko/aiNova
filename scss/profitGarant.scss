@@ -4,6 +4,31 @@
     display: flex;
     justify-content: right;
     flex-wrap: wrap;
+    &_decor{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 0px;
+        img{
+            height: 300px;
+            position: relative;
+            top: -300px;
+            left: -300px
+        }
+    }
+    &_decor_circle{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 0px;
+        img{
+            height: 600px;
+            position: relative;
+            top: -450px;
+            left: -280px;
+            z-index: -1;
+        }
+    }
     &_subHeader{
         text-align: right;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

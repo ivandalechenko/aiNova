@@ -76,4 +76,37 @@
             left: 380px
         }
     }
+    &_round_img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .free_img{
+            z-index: -2;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            top: 400px;
+            left: 400px
+        }
+    }
+    &_roundWithDot_img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .free_img{
+            z-index: -1;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            top: 180px;
+            left: 140px;
+            img{
+                animation: round infinite 90s;
+            }
+        }
+        @keyframes round{
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(360deg);}
+        }
+    }
 }

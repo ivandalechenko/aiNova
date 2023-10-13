@@ -1,5 +1,19 @@
 .businesModel{
     margin-top: 200px;
+    &_decor{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height:0px;
+        img{
+            height:700px;
+            width: 140vw;
+            object-fit: cover;
+            position: relative;
+            top: -600px;
+            z-index: -2;
+        }
+    }
     &_content{
         display: flex;
         align-items: center;
