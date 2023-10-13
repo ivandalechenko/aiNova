@@ -1,0 +1,45 @@
+.header{
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_logo{
+        font-size: 36px;
+        font-weight: 700;
+        &_colored{
+            display: inline;
+            color: $primaryColor;
+            font-size: 36px;
+            font-weight: 700;
+        }
+    }
+    &_lang_and_auth{
+        display: flex;
+        column-gap: 24px;
+        align-items: center;
+    }
+    &_lang{
+        display: flex;
+        column-gap: 8px;
+        &_element{
+            font-size: 18px;
+            font-weight: 400;
+            &_selected{
+                font-weight: 700;
+                text-decoration: underline;
+            }
+            &_delimeter{
+                border-right: 1px solid white;
+            }
+        }
+    }
+    &_auth{
+        padding: 10px 40px;
+        border-radius: 5px;
+        background: $primaryColor;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+    }
+}

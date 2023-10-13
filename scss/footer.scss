@@ -1,0 +1,78 @@
+
+.footer{
+    margin-top: 60px;
+    width: 100%;
+    &_logo{
+        font-size: 36px;
+        font-weight: 700;
+        &_colored{
+            font-size: 36px;
+            font-weight: 700;
+            color: $primaryColor;
+            display: inline;
+        }
+    }
+    &_content{
+        margin-top: 24px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        font-weight: 400;        
+    }
+    &_contacts{
+        &_bold{
+            font-weight: 600;
+        }
+        &_under{
+            text-decoration-line: underline;
+        }
+    }
+    &_contact{
+        margin-top: 24px;
+    }
+    &_socnet{
+        margin-top: 20px;
+        display: flex;
+        column-gap: 12px;
+    }
+    &_nav{
+        display: flex;
+        column-gap: 30px;
+        width: 100px;
+        &_column{
+            display: flex;
+            row-gap: 8px;
+            flex-wrap: wrap;
+            a{
+                display: block;
+                width: 100%;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+    &_hr{
+        margin-top: 20px;
+        width: 100%;
+        border-bottom: 1px solid white;
+    }
+    &_privacy_terms_rights{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    &_right{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    &_privacy_terms{
+        display: flex;
+        column-gap: 24px;
+        a{
+            font-size: 14px;
+            font-weight: 400;
+            text-decoration-line: underline;
+        }
+    }
+}

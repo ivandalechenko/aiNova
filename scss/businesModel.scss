@@ -1,0 +1,83 @@
+.businesModel{
+    margin-top: 180px;
+    &_content{
+        display: flex;
+        align-items: center;
+    }
+    &_header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        &_text{
+            width: 100%;
+            text-align: center;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 134%; /* 85.76px */
+            text-transform: uppercase;
+        }
+        &_line{
+            width: 100%;
+            max-width: 450px;
+            height: 24px;
+            border-radius: 39px;
+            background: #B49657;
+            position: relative;
+            top: -38px;
+            z-index: -1;
+        }
+    }
+    &_stat{
+        width: 42%;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 16px;
+        &_double{
+            display: flex;
+            column-gap: 16px;
+        }
+        &_element{
+            display: flex;
+            align-items: center;
+            column-gap: 18px;
+            min-height: 82px;
+            padding: 14px 18px;border-radius: 5px;
+            width: 100%;
+            background: rgba(180, 150, 87, 0.49);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            &_header{
+                font-size: 12px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+            &_info{
+                font-size: 8px;
+                font-weight: 400;
+                text-transform: uppercase;
+                margin-top: 4px;
+            }
+            &_light{
+                background: #B49657;
+                .businesModel_stat_element_header{font-size: 16px;}
+                .businesModel_stat_element_info{font-size: 12px;}
+            }
+        }
+    }
+    &_info{
+        width: 58%;
+        padding-left: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 24px;
+        &_p{
+            width: 100%;
+            font-size: 20px;
+            font-weight: 500;   
+        }
+        &_p:before{
+            content: "●"
+        }
+    }
+}

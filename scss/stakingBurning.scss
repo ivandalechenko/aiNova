@@ -1,0 +1,27 @@
+
+.stakingBurning{
+    &_header{
+         margin-top: 32px;
+         &_text{
+             font-size: 48px;
+             font-weight: 700;
+             text-transform: uppercase;
+         }
+         &_line{
+             width: 100%;
+             height: 6px;border-radius: 39px;
+             background: #B49657;
+         }
+     }
+     &_p{
+         font-size: 20px;
+         font-style: normal;
+         font-weight: 700;
+         margin-top: 20px;
+         max-width: 1000px;
+     }
+     &_p:before{
+         content: "●";
+     }    
+ }
+ 

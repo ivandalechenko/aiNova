@@ -1,0 +1,51 @@
+.whyWe{
+    margin-top: 100px;
+    width: 100%;
+    &_header{
+		position: relative;
+		z-index: 5;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        &_text{
+             font-size: 96px;
+             font-weight: 700;
+         }
+         &_decor{
+             width: 100%;
+             display: flex;
+             justify-content: center;
+             position: relative;
+             z-index: -1;
+             top: -81px;
+             left: -10px;
+         }
+    }
+    &_advant{
+        &_elements{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            row-gap: 50px;
+            column-gap: 50px;
+        }
+        &_element{
+            width: 40%;
+            background: rgba(180, 150, 87, 0.15);
+            backdrop-filter: blur(9px);
+            padding: 20px;
+            display: flex;
+            column-gap: 16px;
+            align-items: center;
+            &_delimeter{
+                border-right: 4px solid white;
+                height: 80px;
+            }
+            &_text{
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+}
