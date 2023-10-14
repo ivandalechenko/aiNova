@@ -1,4 +1,5 @@
 import './scss/style.scss'
 
-import 'lazysizes';
-import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+import lozad from 'lozad'
+const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
