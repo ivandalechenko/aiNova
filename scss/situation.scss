@@ -7,6 +7,9 @@
         font-size: 48px;
         font-weight: 700;
         text-transform: uppercase;
+        @media(max-width:700px){
+            font-size: 32px;
+        }
     }
     &_subHeader{
         width: 100%;
@@ -15,6 +18,9 @@
         font-size: 20px;
         font-weight: 700;
         text-transform: uppercase;
+        @media(max-width:700px){
+            font-size: 17px;
+        }
     }
     &_line{
         width: 100%;
@@ -28,6 +34,12 @@
         display: flex;
         justify-content: space-between;
         column-gap: 52px;
+        align-items: center;
+        @media(max-width:900px){
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 30px;
+        }
     }
     &_info{
         display: flex;
@@ -53,6 +65,11 @@
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
+        }
+    }
+    &_decor{
+        img{
+            width: 100%;
         }
     }
 }

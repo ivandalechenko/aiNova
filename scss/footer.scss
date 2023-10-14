@@ -17,9 +17,17 @@
         display: flex;
         justify-content: space-between;
         font-size: 16px;
-        font-weight: 400;        
+        font-weight: 400;       
+        @media(max-width:500px){
+            flex-wrap: wrap;
+        } 
     }
-    &_contacts{
+    &_contacts{ 
+        @media(max-width:500px){
+            width: 100%;
+            order: 2;
+            margin-top: 20px;
+        } 
         &_bold{
             font-weight: 600;
         }
@@ -61,6 +69,10 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 20px;
+        @media(max-width:500px){
+            flex-wrap: wrap;
+            row-gap: 10px;
+        }
     }
     &_right{
         font-size: 14px;

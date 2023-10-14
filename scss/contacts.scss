@@ -13,10 +13,17 @@
             font-size: 32px;
             font-weight: 700;
             text-align: center;
+            @media(max-width:700px){
+                font-size: 24px;
+            }
+            @media(max-width:450px){
+                font-size: 18px;
+            }
         }
         &_line{
             margin-top: 8px;
-            width: 452px;
+            width: 100%;
+            max-width: 452px;
             height: 24px;
             border-radius: 39px;
             background: #B49657;
@@ -29,6 +36,9 @@
         justify-content: center;
         column-gap: 20px;
         row-gap: 20px;
+        @media(max-width:1000px){
+            flex-wrap: wrap;
+        }
         &_element{
             width: 100%;
             max-width: 360px;
